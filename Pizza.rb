@@ -31,9 +31,11 @@ end
  	array.sample
  end
 
-def order
+def order(x)
+
  puts " 
  ""Below is your pizza order info:"
+ p "Pizza number: #{x}"
  p "Size: #{size}"
  p "Cheese: #{cheese}"
  p "Meat: #{meat}"
@@ -44,11 +46,11 @@ end
 
  puts "How many pizza do you want?"
  counter = gets.chomp.to_i
-x = 0.5
-
+ 
+x = 0
 counter.times do
 	x += 1
-	order
+	order(x)
 end
 
 
